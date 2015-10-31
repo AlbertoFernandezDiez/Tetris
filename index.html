@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+   <title>Tetris</title>
+   <meta charset='UTF-8'/>
+   <link rel="stylesheet" href="tetris.css">
+   <script src="tetris.js"></script>
+</head>
+<body>
+	 
+		<canvas id="canvas" width="500" height = "600"></canvas>
+		<div id="background"></div>
+		<div id="loading">
+		<h1>Loading</h1>
+		<p>Wait</p>
+		</div>
+		<div id="game_over" >
+		<h1>Game Over</h1>
+		<h2>Enter your name</h2>
+		</div>
+		<div id="pause">
+		<h1>Pause</h1>
+		</div>
+		<div id="border"></div>
+		
+		
+		<audio loop>
+		<source src="sound/tetris.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio> 
+		<audio>
+		<source src="sound/score.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio> 
+		<audio>
+		<source src="sound/game_over.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio >
+		<audio loop>		
+		<source src="sound/pause.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio> 
+		<div id=record>
+		<input type='text' id='nombre'/>
+		<input type='button' id='boton' value='Almacenar Record'/>
+		</div>
+<script>
+// ===== main ====
+// canvas related variables
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+// clear the canvas
+ctx.fillStyle = 'white';
+ctx.fillRect(0,0,canvas.width,canvas.height); 
+
+
+var game = new Tetris();
+
+game.init();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+#canvas {
+
+	visibility:visible;
+	position:absolute;
+}
+
+#loading{
+top: 250px	;
+visibility:visible;
+position:absolute;
+text-align:center;
+width: 300px; 
+height:50px;
+background-color:Transparent;
+color:#CC0000;
+}
+
+#border{
+ border:1px solid #000000;
+visibility:visible;
+position:absolute;
+width: 300px; 
+height: 600px;
+}
+
+#background{
+visibility:visible;
+position:absolute;
+top:10px;
+left: 10px;
+width: 299px; 
+height: 599px;
+opacity: 0.5 ;
+background-color: #FFFF91;
+}
+
+#game_over{
+top: 250px	;
+visibility:hidden;
+position:absolute;
+text-align:center;
+width: 300px; 
+height:50px;
+background-color:Transparent;
+color:#CC0000;
+
+}
+
+#pause{
+top: 250px;
+ line-height:50px;
+visibility:hidden;
+position:absolute;
+text-align:center;
+width: 300px; 
+height:50px;
+color:#CC0000;
+}
+
+#record{
+position:absolute;
+left: 320px;
+top: 150px;
+visibility:hidden;	
+}
+
